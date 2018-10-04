@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css">
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../assets/css/unify.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <style>
         [ng\:cloak], [ng-cloak], .ng-cloak {
             display: none !important;
@@ -38,6 +41,15 @@
         .help_btn2 {
             height: 50px;
             width: 200px;
+        }
+
+        .github:focus {
+            outline:none;
+        }
+
+        .github:hover {
+            color: white;
+            outline: none;
         }
     </style>
 </head>
@@ -59,7 +71,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="mb-5" ng-hide="IxCtrl.showBtn">
-                            <h1 class="g-color-white g-font-size-60 mb-4 g-py-10">Need Help?</h1>
+                            <a href="https://github.com/AndrewRchow/nasw2017" target="_blank" 
+                               class="github fab fa-github fa-7x"
+                               style="margin-right:3%;"></a>
+                            <h1 class="g-color-white g-font-size-60 mb-4 g-py-10"
+                                style="display:inline-block;">Need Help?</h1>
                         </div>
                         <div class="mb-5" ng-show="IxCtrl.showBtn" ng-cloak>
                             <h1 class="g-color-white g-font-size-60 mb-4 g-py-10">Concerning?</h1>
